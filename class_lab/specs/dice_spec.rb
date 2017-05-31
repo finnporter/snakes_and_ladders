@@ -4,12 +4,12 @@ require_relative("../dice")
 class TestDice < MiniTest::Test
 
 def setup
-  @die = Dice.new(3)
+  @die = Dice.new(6)
 end  
 
-def test_roll_dice
-  assert_includes((1..6), @die.roll_dice)
-end
+# def test_roll_dice
+#   assert_includes((1..6), @die.roll_dice)
+# end
 
 
 

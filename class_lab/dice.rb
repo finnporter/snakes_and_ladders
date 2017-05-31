@@ -1,14 +1,16 @@
 class Dice
 
-attr_reader :dice_value
+attr_accessor :dice_value
 
-def initialize(dice_value)
-  @dice_value = dice_value
+def initialize(sides)
+  @sides = sides
 end  
 
 def roll_dice
-  return dice_value = 1 + rand(6)
+  return  rand(1..@sides)
 end
+
+
 
 
 
