@@ -11,6 +11,9 @@ class Player
     @points_counter += value
   end
 
+  def win
+    return "You have won!" if @points_counter == 100
+  end
 
 
 
